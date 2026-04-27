@@ -1,0 +1,1711 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Engineering, QA, Design and Operations processes">
+      
+      
+        <meta name="author" content="Startup Team">
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>IT Startup Processes Wiki Implementation Plan - Team Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#it-startup-processes-wiki-implementation-plan" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Team Wiki" class="md-header__button md-logo" aria-label="Team Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Team Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              IT Startup Processes Wiki Implementation Plan
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../onboarding/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Onboarding
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../roles/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Роли
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../development/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Development
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../testing/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Testing
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../devops/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  DevOps
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../releases/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Releases
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../design/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Design
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../communication/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Communication
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../incidents/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Incidents
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../glossary/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Glossary
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Team Wiki" class="md-nav__button md-logo" aria-label="Team Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Team Wiki
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../onboarding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Onboarding
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../roles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Роли
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../development/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Development
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../devops/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DevOps
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../releases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Releases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../communication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Communication
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../incidents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Incidents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#file-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        File Structure
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="File Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#task-1-bootstrap-project-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 1: Bootstrap Project Configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-2-landing-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 2: Landing Page
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-3-onboarding-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 3: Onboarding Section
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-4-development-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 4: Development Section
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-5-testing-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 5: Testing Section
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-6-devops-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 6: DevOps Section
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-7-releases-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 7: Releases Section
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-8-design-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 8: Design Section
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-9-communication-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 9: Communication Section
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-10-incidents-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 10: Incidents Section
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-11-glossary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 11: Glossary
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-12-build-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 12: Build Verification
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#self-review-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Self-Review Checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="it-startup-processes-wiki-implementation-plan">IT Startup Processes Wiki Implementation Plan<a class="headerlink" href="#it-startup-processes-wiki-implementation-plan" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p><strong>For agentic workers:</strong> REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (<code>- [ ]</code>) syntax for tracking.</p>
+</blockquote>
+<p><strong>Goal:</strong> Build and deploy a MkDocs-based team wiki documenting all engineering, QA, design, and operational processes for a 10-person startup team.</p>
+<p><strong>Architecture:</strong> Static site generated by MkDocs with Material theme, hosted on GitHub Pages, auto-deployed via GitHub Actions. Content stored as Markdown in Git with PR-based editing workflow.</p>
+<p><strong>Tech Stack:</strong> Python, MkDocs, Material for MkDocs, GitHub Actions, GitHub Pages</p>
+<hr />
+<h2 id="file-structure">File Structure<a class="headerlink" href="#file-structure" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>.
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>├── docs/
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>│   ├── index.md
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>│   ├── onboarding/
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>│   │   └── index.md
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>│   ├── development/
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>│   │   └── index.md
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>│   ├── testing/
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>│   │   └── index.md
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>│   ├── devops/
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>│   │   └── index.md
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>│   ├── releases/
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>│   │   └── index.md
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>│   ├── design/
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>│   │   └── index.md
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>│   ├── communication/
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>│   │   └── index.md
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>│   ├── incidents/
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>│   │   └── index.md
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>│   └── glossary.md
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>├── mkdocs.yml
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>├── requirements.txt
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>└── .github/
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>    └── workflows/
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>        └── deploy.yml
+</code></pre></div>
+<hr />
+<h3 id="task-1-bootstrap-project-configuration">Task 1: Bootstrap Project Configuration<a class="headerlink" href="#task-1-bootstrap-project-configuration" title="Permanent link">&para;</a></h3>
+<p><strong>Files:</strong>
+- Create: <code>requirements.txt</code>
+- Create: <code>mkdocs.yml</code>
+- Create: <code>.github/workflows/deploy.yml</code></p>
+<ul>
+<li>[ ] <strong>Step 1: Create requirements.txt</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>mkdocs-material&gt;=9.5.0
+</code></pre></div>
+<ul>
+<li>[ ] <strong>Step 2: Create mkdocs.yml</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">site_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Team Wiki</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nt">site_description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Engineering, QA, Design and Operations processes</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nt">site_author</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Startup Team</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="nt">theme</span><span class="p">:</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">material</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">  </span><span class="nt">palette</span><span class="p">:</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">media</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;(prefers-color-scheme:</span><span class="nv"> </span><span class="s">light)&quot;</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">      </span><span class="nt">scheme</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">default</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">      </span><span class="nt">primary</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">indigo</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">      </span><span class="nt">accent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">indigo</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">      </span><span class="nt">toggle</span><span class="p">:</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">        </span><span class="nt">icon</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">material/brightness-7</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Switch to dark mode</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">media</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;(prefers-color-scheme:</span><span class="nv"> </span><span class="s">dark)&quot;</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">      </span><span class="nt">scheme</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">slate</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">      </span><span class="nt">primary</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">indigo</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="w">      </span><span class="nt">accent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">indigo</span>
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="w">      </span><span class="nt">toggle</span><span class="p">:</span>
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="w">        </span><span class="nt">icon</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">material/brightness-4</span>
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Switch to light mode</span>
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="w">  </span><span class="nt">features</span><span class="p">:</span>
+<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">navigation.tabs</span>
+<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">navigation.sections</span>
+<a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">navigation.top</span>
+<a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">search.suggest</span>
+<a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">search.highlight</span>
+<a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">content.code.copy</span>
+<a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a>
+<a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a><span class="nt">plugins</span><span class="p">:</span>
+<a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">search</span>
+<a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a>
+<a id="__codelineno-2-33" name="__codelineno-2-33" href="#__codelineno-2-33"></a><span class="nt">markdown_extensions</span><span class="p">:</span>
+<a id="__codelineno-2-34" name="__codelineno-2-34" href="#__codelineno-2-34"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">pymdownx.highlight</span><span class="p">:</span>
+<a id="__codelineno-2-35" name="__codelineno-2-35" href="#__codelineno-2-35"></a><span class="w">      </span><span class="nt">anchor_linenums</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<a id="__codelineno-2-36" name="__codelineno-2-36" href="#__codelineno-2-36"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.inlinehilite</span>
+<a id="__codelineno-2-37" name="__codelineno-2-37" href="#__codelineno-2-37"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.snippets</span>
+<a id="__codelineno-2-38" name="__codelineno-2-38" href="#__codelineno-2-38"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.superfences</span>
+<a id="__codelineno-2-39" name="__codelineno-2-39" href="#__codelineno-2-39"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">admonition</span>
+<a id="__codelineno-2-40" name="__codelineno-2-40" href="#__codelineno-2-40"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.details</span>
+<a id="__codelineno-2-41" name="__codelineno-2-41" href="#__codelineno-2-41"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tables</span>
+<a id="__codelineno-2-42" name="__codelineno-2-42" href="#__codelineno-2-42"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">toc</span><span class="p">:</span>
+<a id="__codelineno-2-43" name="__codelineno-2-43" href="#__codelineno-2-43"></a><span class="w">      </span><span class="nt">permalink</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<a id="__codelineno-2-44" name="__codelineno-2-44" href="#__codelineno-2-44"></a>
+<a id="__codelineno-2-45" name="__codelineno-2-45" href="#__codelineno-2-45"></a><span class="nt">nav</span><span class="p">:</span>
+<a id="__codelineno-2-46" name="__codelineno-2-46" href="#__codelineno-2-46"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Home</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">index.md</span>
+<a id="__codelineno-2-47" name="__codelineno-2-47" href="#__codelineno-2-47"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Onboarding</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">onboarding/index.md</span>
+<a id="__codelineno-2-48" name="__codelineno-2-48" href="#__codelineno-2-48"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Development</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">development/index.md</span>
+<a id="__codelineno-2-49" name="__codelineno-2-49" href="#__codelineno-2-49"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Testing</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">testing/index.md</span>
+<a id="__codelineno-2-50" name="__codelineno-2-50" href="#__codelineno-2-50"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">DevOps</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">devops/index.md</span>
+<a id="__codelineno-2-51" name="__codelineno-2-51" href="#__codelineno-2-51"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Releases</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">releases/index.md</span>
+<a id="__codelineno-2-52" name="__codelineno-2-52" href="#__codelineno-2-52"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Design</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">design/index.md</span>
+<a id="__codelineno-2-53" name="__codelineno-2-53" href="#__codelineno-2-53"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Communication</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">communication/index.md</span>
+<a id="__codelineno-2-54" name="__codelineno-2-54" href="#__codelineno-2-54"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Incidents</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">incidents/index.md</span>
+<a id="__codelineno-2-55" name="__codelineno-2-55" href="#__codelineno-2-55"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Glossary</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">glossary.md</span>
+</code></pre></div>
+<ul>
+<li>[ ] <strong>Step 3: Create GitHub Actions deploy workflow</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Deploy to GitHub Pages</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nt">on</span><span class="p">:</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span><span class="nt">push</span><span class="p">:</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="nt">branches</span><span class="p">:</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">main</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="nt">permissions</span><span class="p">:</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">  </span><span class="nt">contents</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">write</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="nt">jobs</span><span class="p">:</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">  </span><span class="nt">deploy</span><span class="p">:</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">    </span><span class="nt">steps</span><span class="p">:</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/checkout@v4</span>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Setup Python</span>
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/setup-python@v5</span>
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="w">        </span><span class="nt">with</span><span class="p">:</span>
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="w">          </span><span class="nt">python-version</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;3.11&#39;</span>
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>
+<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Install dependencies</span>
+<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a><span class="w">          </span><span class="no">pip install -r requirements.txt</span>
+<a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a>
+<a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Deploy to GitHub Pages</span>
+<a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a><span class="w">          </span><span class="no">mkdocs gh-deploy --force</span>
+</code></pre></div>
+<ul>
+<li>[ ] <strong>Step 4: Commit bootstrap files</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>git<span class="w"> </span>add<span class="w"> </span>requirements.txt<span class="w"> </span>mkdocs.yml<span class="w"> </span>.github/workflows/deploy.yml
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;chore: bootstrap mkdocs project with material theme and github pages deploy&quot;</span>
+</code></pre></div>
+<hr />
+<h3 id="task-2-landing-page">Task 2: Landing Page<a class="headerlink" href="#task-2-landing-page" title="Permanent link">&para;</a></h3>
+<p><strong>Files:</strong>
+- Create: <code>docs/index.md</code></p>
+<ul>
+<li>[ ] <strong>Step 1: Create docs/index.md</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="gh"># Team Wiki</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>Welcome to the single source of truth for how our team works.
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="gu">## Quick Links</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="k">-</span><span class="w"> </span>[<span class="nt">Onboarding</span>](<span class="na">onboarding/index.md</span>) — New here? Start here
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="k">-</span><span class="w"> </span>[<span class="nt">Development</span>](<span class="na">development/index.md</span>) — How we write code
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="k">-</span><span class="w"> </span>[<span class="nt">Testing</span>](<span class="na">testing/index.md</span>) — How we ensure quality
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="k">-</span><span class="w"> </span>[<span class="nt">Releases</span>](<span class="na">releases/index.md</span>) — How we ship
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="k">-</span><span class="w"> </span>[<span class="nt">Incidents</span>](<span class="na">incidents/index.md</span>) — What to do when things break
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="gu">## How to Edit This Wiki</span>
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>This wiki is stored as Markdown in our Git repository. To make changes:
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="k">1.</span> Create a branch: <span class="sb">`git checkout -b docs/update-onboarding`</span>
+<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a><span class="k">2.</span> Edit the relevant <span class="sb">`.md`</span> file in the <span class="sb">`docs/`</span> folder
+<a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a><span class="k">3.</span> Open a Pull Request
+<a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a><span class="k">4.</span> Ask any teammate to review
+<a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a><span class="k">5.</span> Merge to <span class="sb">`main`</span> — the site updates automatically in ~1 minute
+<a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a>
+<a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a><span class="gu">## Team Contacts</span>
+<a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a>
+<a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a>| Role | Who to Ask |
+<a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a>|------|------------|
+<a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a>| Tech Lead | <span class="ni">@tl</span> |
+<a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a>| DevOps | <span class="ni">@devops</span> |
+<a id="__codelineno-5-29" name="__codelineno-5-29" href="#__codelineno-5-29"></a>| QA Lead | <span class="ni">@qa</span>-lead |
+<a id="__codelineno-5-30" name="__codelineno-5-30" href="#__codelineno-5-30"></a>| Design | <span class="ni">@designer</span> |
+</code></pre></div>
+<ul>
+<li>[ ] <strong>Step 2: Commit landing page</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>git<span class="w"> </span>add<span class="w"> </span>docs/index.md
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;docs: add landing page with quick links and editing guide&quot;</span>
+</code></pre></div>
+<hr />
+<h3 id="task-3-onboarding-section">Task 3: Onboarding Section<a class="headerlink" href="#task-3-onboarding-section" title="Permanent link">&para;</a></h3>
+<p><strong>Files:</strong>
+- Create: <code>docs/onboarding/index.md</code></p>
+<ul>
+<li>[ ] <strong>Step 1: Create docs/onboarding/index.md</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="gh"># Onboarding</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="gu">## Day 1 Checklist</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="k">- [ ]</span> Get access to GitHub organization
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="k">- [ ]</span> Get access to Slack workspace
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="k">- [ ]</span> Get access to Figma
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="k">- [ ]</span> Get access to staging and production environments (read-only initially)
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="k">- [ ]</span> Set up local development environment (see Development guide)
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="k">- [ ]</span> Join daily standup at 10:00 AM
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="k">- [ ]</span> Schedule 1:1 with your buddy (assigned by TL)
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="gu">## Tools We Use</span>
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a>
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a>| Tool | Purpose | How to Get Access |
+<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a>|------|---------|-------------------|
+<a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a>| GitHub | Code &amp; Wiki | Admin invites to org |
+<a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a>| Slack | Communication | Admin invites to workspace |
+<a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a>| Figma | Design | Designer adds to team |
+<a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a>| Datadog / Grafana | Monitoring | DevOps adds account |
+<a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a>
+<a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a><span class="gu">## Your First PR</span>
+<a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a>
+<a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a><span class="k">1.</span> Clone the main repository
+<a id="__codelineno-7-25" name="__codelineno-7-25" href="#__codelineno-7-25"></a><span class="k">2.</span> Create a branch: <span class="sb">`git checkout -b onboarding/your-name`</span>
+<a id="__codelineno-7-26" name="__codelineno-7-26" href="#__codelineno-7-26"></a><span class="k">3.</span> Add your name to the team roster in this page
+<a id="__codelineno-7-27" name="__codelineno-7-27" href="#__codelineno-7-27"></a><span class="k">4.</span> Open a Pull Request
+<a id="__codelineno-7-28" name="__codelineno-7-28" href="#__codelineno-7-28"></a><span class="k">5.</span> Request review from your buddy
+<a id="__codelineno-7-29" name="__codelineno-7-29" href="#__codelineno-7-29"></a><span class="k">6.</span> Merge after approval
+<a id="__codelineno-7-30" name="__codelineno-7-30" href="#__codelineno-7-30"></a>
+<a id="__codelineno-7-31" name="__codelineno-7-31" href="#__codelineno-7-31"></a>!!! tip &quot;Questions?&quot;
+<a id="__codelineno-7-32" name="__codelineno-7-32" href="#__codelineno-7-32"></a>    If anything is unclear, ask in <span class="sb">`#general`</span> on Slack or ping your buddy directly.
+</code></pre></div>
+<ul>
+<li>[ ] <strong>Step 2: Commit onboarding section</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>git<span class="w"> </span>add<span class="w"> </span>docs/onboarding/index.md
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;docs: add onboarding section with day-1 checklist and tools&quot;</span>
+</code></pre></div>
+<hr />
+<h3 id="task-4-development-section">Task 4: Development Section<a class="headerlink" href="#task-4-development-section" title="Permanent link">&para;</a></h3>
+<p><strong>Files:</strong>
+- Create: <code>docs/development/index.md</code></p>
+<ul>
+<li>[ ] <strong>Step 1: Create docs/development/index.md</strong></li>
+</ul>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="gh"># Development</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="gu">## Git Workflow</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>We use <span class="gs">**trunk-based development**</span>:
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="k">-</span><span class="w"> </span><span class="sb">`main`</span> is always deployable
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="k">-</span><span class="w"> </span>All work happens on short-lived feature branches
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="k">-</span><span class="w"> </span>Branch naming: <span class="sb">`feat/description`</span>, <span class="sb">`fix/description`</span>, <span class="sb">`docs/description`</span>
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="k">-</span><span class="w"> </span>Pull Requests are mandatory for all changes
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="gu">## Code Style</span>
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a><span class="k">-</span><span class="w"> </span>We use the linters configured in the repository (ESLint, Prettier, Black, etc.)
+<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a><span class="k">-</span><span class="w"> </span>Run <span class="sb">`npm run lint`</span> or equivalent before pushing
+<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a><span class="k">-</span><span class="w"> </span>Pre-commit hooks are configured — they will block commits with style violations
+<a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a>
+<a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a><span class="gu">## Code Review</span>
+<a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a>
+<a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a><span class="k">-</span><span class="w"> </span>Every PR requires <span class="gs">**at least 1 approval**</span> before merge
+<a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a><span class="k">-</span><span class="w"> </span>Turnaround target: review within <span class="gs">**4 hours**</span> during work hours
+<a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a><span class="k">-</span><span class="w"> </span>As a reviewer, check:
+<a id="__codelineno-9-23" name="__codelineno-9-23" href="#__codelineno-9-23"></a><span class="w">  </span><span class="k">-</span><span class="w"> </span>Logic correctness
+<a id="__codelineno-9-24" name="__codelineno-9-24" href="#__codelineno-9-24"></a><span class="w">  </span><span class="k">-</span><span class="w"> </span>Test coverage
+<a id="__codelineno-9-25" name="__codelineno-9-25" href="#__codelineno-9-25"></a><span class="w">  </span><span class="k">-</span><span class="w"> </span>Security implications
+<a id="__codelineno-9-26" name="__codelineno-9-26" href="#__codelineno-9-26"></a><span class="w">  </span><span class="k">-</span><span class="w"> </span>Performance impact (for hot paths)
+<a id="__codelineno-9-27" name="__codelineno-9-27" href="#__codelineno-9-27"></a>
+<a id="__codelineno-9-28" name="__codelineno-9-28" href="#__codelineno-9-28"></a><span class="gu">## Commits</span>
+<a id="__codelineno-9-29" name="__codelineno-9-29" href="#__codelineno-9-29"></a>
+<a id="__codelineno-9-30" name="__codelineno-9-30" href="#__codelineno-9-30"></a>Use [<span class="nt">Conventional Commits</span>](<span class="na">https://www.conventionalcommits.org/</span>):
+</code></pre></div>
+feat: add user authentication
+fix: resolve login redirect loop
+docs: update API examples
+refactor: simplify payment processing
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>## Pull Requests
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>PR description template (auto-populated):
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>```markdown
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>## What
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>Brief description of the change
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>## Why
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>Business or technical reason
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>
+<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>## How to Test
+<a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a>Steps to verify the change
+<a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a>
+<a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a>## Screenshots (if UI change)
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>- [ ] **Step 2: Commit development section**
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>```bash
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>git add docs/development/index.md
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>git commit -m &quot;docs: add development section with git workflow and code review rules&quot;
+</code></pre></div></p>
+<hr />
+<h3 id="task-5-testing-section">Task 5: Testing Section<a class="headerlink" href="#task-5-testing-section" title="Permanent link">&para;</a></h3>
+<p><strong>Files:</strong>
+- Create: <code>docs/testing/index.md</code></p>
+<ul>
+<li>[ ] <strong>Step 1: Create docs/testing/index.md</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="gh"># Testing</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="gu">## Test Pyramid</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>| Level | Responsibility | When to Run |
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>|-------|---------------|-------------|
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>| Unit tests | Developers | On every PR, locally and in CI |
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>| Integration tests | Developers + QA | On every PR in CI |
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>| E2E tests | QA team | Nightly + before release |
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>
+<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a><span class="gu">## Bug Reports</span>
+<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>
+<a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a>When you find a bug, create a ticket with:
+<a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a>
+<a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Title:**</span> Clear, one-sentence description
+<a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Steps to Reproduce:**</span> Numbered list
+<a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Expected Result:**</span> What should happen
+<a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Actual Result:**</span> What actually happens
+<a id="__codelineno-12-19" name="__codelineno-12-19" href="#__codelineno-12-19"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Environment:**</span> Browser, OS, app version
+<a id="__codelineno-12-20" name="__codelineno-12-20" href="#__codelineno-12-20"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Severity:**</span>
+<a id="__codelineno-12-21" name="__codelineno-12-21" href="#__codelineno-12-21"></a><span class="w">  </span><span class="k">-</span><span class="w"> </span><span class="gs">**Blocker**</span> — prevents core functionality, no workaround
+<a id="__codelineno-12-22" name="__codelineno-12-22" href="#__codelineno-12-22"></a><span class="w">  </span><span class="k">-</span><span class="w"> </span><span class="gs">**Critical**</span> — major functionality broken, workaround exists
+<a id="__codelineno-12-23" name="__codelineno-12-23" href="#__codelineno-12-23"></a><span class="w">  </span><span class="k">-</span><span class="w"> </span><span class="gs">**Major**</span> — noticeable issue, limited impact
+<a id="__codelineno-12-24" name="__codelineno-12-24" href="#__codelineno-12-24"></a><span class="w">  </span><span class="k">-</span><span class="w"> </span><span class="gs">**Minor**</span> — cosmetic or edge case
+<a id="__codelineno-12-25" name="__codelineno-12-25" href="#__codelineno-12-25"></a>
+<a id="__codelineno-12-26" name="__codelineno-12-26" href="#__codelineno-12-26"></a><span class="gu">## Environments</span>
+<a id="__codelineno-12-27" name="__codelineno-12-27" href="#__codelineno-12-27"></a>
+<a id="__codelineno-12-28" name="__codelineno-12-28" href="#__codelineno-12-28"></a>| Environment | Purpose | Data |
+<a id="__codelineno-12-29" name="__codelineno-12-29" href="#__codelineno-12-29"></a>|-------------|---------|------|
+<a id="__codelineno-12-30" name="__codelineno-12-30" href="#__codelineno-12-30"></a>| Local | Development | Mock / seeded |
+<a id="__codelineno-12-31" name="__codelineno-12-31" href="#__codelineno-12-31"></a>| Dev | Integration testing | Synthetic |
+<a id="__codelineno-12-32" name="__codelineno-12-32" href="#__codelineno-12-32"></a>| Staging | Pre-release validation | Anonymized production |
+<a id="__codelineno-12-33" name="__codelineno-12-33" href="#__codelineno-12-33"></a>| Production | Live users | Real |
+<a id="__codelineno-12-34" name="__codelineno-12-34" href="#__codelineno-12-34"></a>
+<a id="__codelineno-12-35" name="__codelineno-12-35" href="#__codelineno-12-35"></a><span class="gu">## Regression Testing</span>
+<a id="__codelineno-12-36" name="__codelineno-12-36" href="#__codelineno-12-36"></a>
+<a id="__codelineno-12-37" name="__codelineno-12-37" href="#__codelineno-12-37"></a><span class="k">-</span><span class="w"> </span>QA runs full regression before every release
+<a id="__codelineno-12-38" name="__codelineno-12-38" href="#__codelineno-12-38"></a><span class="k">-</span><span class="w"> </span>Critical paths are covered by automated E2E tests
+<a id="__codelineno-12-39" name="__codelineno-12-39" href="#__codelineno-12-39"></a><span class="k">-</span><span class="w"> </span>New features must include test cases in the ticket before development starts
+</code></pre></div>
+<ul>
+<li>[ ] <strong>Step 2: Commit testing section</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>git<span class="w"> </span>add<span class="w"> </span>docs/testing/index.md
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;docs: add testing section with pyramid, bug report template and environments&quot;</span>
+</code></pre></div>
+<hr />
+<h3 id="task-6-devops-section">Task 6: DevOps Section<a class="headerlink" href="#task-6-devops-section" title="Permanent link">&para;</a></h3>
+<p><strong>Files:</strong>
+- Create: <code>docs/devops/index.md</code></p>
+<ul>
+<li>[ ] <strong>Step 1: Create docs/devops/index.md</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="gh"># DevOps</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="gu">## CI/CD Pipeline</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>Every PR triggers:
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="k">1.</span> <span class="gs">**Lint &amp; Format check**</span>
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="k">2.</span> <span class="gs">**Unit tests**</span>
+<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a><span class="k">3.</span> <span class="gs">**Build Docker image**</span>
+<a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a><span class="k">4.</span> <span class="gs">**Integration tests**</span> (on dev environment)
+<a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a><span class="k">5.</span> <span class="gs">**Security scan**</span> (Trivy / Snyk)
+<a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a>
+<a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a>Merges to <span class="sb">`main`</span> trigger automatic deployment to <span class="gs">**dev**</span>.
+<a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a>Staging and production require manual approval in GitHub Actions.
+<a id="__codelineno-14-15" name="__codelineno-14-15" href="#__codelineno-14-15"></a>
+<a id="__codelineno-14-16" name="__codelineno-14-16" href="#__codelineno-14-16"></a><span class="gu">## Environments</span>
+<a id="__codelineno-14-17" name="__codelineno-14-17" href="#__codelineno-14-17"></a>
+<a id="__codelineno-14-18" name="__codelineno-14-18" href="#__codelineno-14-18"></a>| Environment | Deploy Trigger | Protection |
+<a id="__codelineno-14-19" name="__codelineno-14-19" href="#__codelineno-14-19"></a>|-------------|---------------|------------|
+<a id="__codelineno-14-20" name="__codelineno-14-20" href="#__codelineno-14-20"></a>| Dev | Auto on merge to main | None |
+<a id="__codelineno-14-21" name="__codelineno-14-21" href="#__codelineno-14-21"></a>| Staging | Manual | TL approval |
+<a id="__codelineno-14-22" name="__codelineno-14-22" href="#__codelineno-14-22"></a>| Production | Manual | TL + DevOps approval |
+<a id="__codelineno-14-23" name="__codelineno-14-23" href="#__codelineno-14-23"></a>
+<a id="__codelineno-14-24" name="__codelineno-14-24" href="#__codelineno-14-24"></a><span class="gu">## Monitoring</span>
+<a id="__codelineno-14-25" name="__codelineno-14-25" href="#__codelineno-14-25"></a>
+<a id="__codelineno-14-26" name="__codelineno-14-26" href="#__codelineno-14-26"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Dashboards:**</span> Grafana — [<span class="nt">link</span>](<span class="na">https://grafana.example.com</span>)
+<a id="__codelineno-14-27" name="__codelineno-14-27" href="#__codelineno-14-27"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Key Metrics:**</span>
+<a id="__codelineno-14-28" name="__codelineno-14-28" href="#__codelineno-14-28"></a><span class="w">  </span><span class="k">-</span><span class="w"> </span>Error rate &lt; 0.1%
+<a id="__codelineno-14-29" name="__codelineno-14-29" href="#__codelineno-14-29"></a><span class="w">  </span><span class="k">-</span><span class="w"> </span>P95 response time &lt; 500ms
+<a id="__codelineno-14-30" name="__codelineno-14-30" href="#__codelineno-14-30"></a><span class="w">  </span><span class="k">-</span><span class="w"> </span>CPU / Memory utilization
+<a id="__codelineno-14-31" name="__codelineno-14-31" href="#__codelineno-14-31"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Alerts:**</span> PagerDuty for P0/P1 incidents
+<a id="__codelineno-14-32" name="__codelineno-14-32" href="#__codelineno-14-32"></a>
+<a id="__codelineno-14-33" name="__codelineno-14-33" href="#__codelineno-14-33"></a><span class="gu">## Access</span>
+<a id="__codelineno-14-34" name="__codelineno-14-34" href="#__codelineno-14-34"></a>
+<a id="__codelineno-14-35" name="__codelineno-14-35" href="#__codelineno-14-35"></a>| Resource | Who Has Access | How to Request |
+<a id="__codelineno-14-36" name="__codelineno-14-36" href="#__codelineno-14-36"></a>|----------|---------------|----------------|
+<a id="__codelineno-14-37" name="__codelineno-14-37" href="#__codelineno-14-37"></a>| Production AWS | DevOps, TL | Ask DevOps |
+<a id="__codelineno-14-38" name="__codelineno-14-38" href="#__codelineno-14-38"></a>| Staging AWS | All engineers | Auto-granted on hire |
+<a id="__codelineno-14-39" name="__codelineno-14-39" href="#__codelineno-14-39"></a>| CI/CD admin | DevOps, TL | Ask DevOps |
+</code></pre></div>
+<ul>
+<li>[ ] <strong>Step 2: Commit DevOps section</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>git<span class="w"> </span>add<span class="w"> </span>docs/devops/index.md
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;docs: add devops section with ci/cd, environments and monitoring&quot;</span>
+</code></pre></div>
+<hr />
+<h3 id="task-7-releases-section">Task 7: Releases Section<a class="headerlink" href="#task-7-releases-section" title="Permanent link">&para;</a></h3>
+<p><strong>Files:</strong>
+- Create: <code>docs/releases/index.md</code></p>
+<ul>
+<li>[ ] <strong>Step 1: Create docs/releases/index.md</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="gh"># Releases</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="gu">## Release Checklist</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="gu">### Pre-Release (Day Before)</span>
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="k">- [ ]</span> All tickets for the release are merged to <span class="sb">`main`</span>
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="k">- [ ]</span> QA has signed off on staging
+<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a><span class="k">- [ ]</span> Release notes are drafted
+<a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a><span class="k">- [ ]</span> Database migrations are reviewed by DevOps
+<a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a>
+<a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a><span class="gu">### Release Day</span>
+<a id="__codelineno-16-13" name="__codelineno-16-13" href="#__codelineno-16-13"></a>
+<a id="__codelineno-16-14" name="__codelineno-16-14" href="#__codelineno-16-14"></a><span class="k">- [ ]</span> Run automated E2E suite against staging
+<a id="__codelineno-16-15" name="__codelineno-16-15" href="#__codelineno-16-15"></a><span class="k">- [ ]</span> Deploy to production (manual approval in GitHub Actions)
+<a id="__codelineno-16-16" name="__codelineno-16-16" href="#__codelineno-16-16"></a><span class="k">- [ ]</span> Run smoke tests on production
+<a id="__codelineno-16-17" name="__codelineno-16-17" href="#__codelineno-16-17"></a><span class="k">- [ ]</span> Monitor error rate for 30 minutes
+<a id="__codelineno-16-18" name="__codelineno-16-18" href="#__codelineno-16-18"></a><span class="k">- [ ]</span> Announce release in <span class="sb">`#releases`</span> Slack channel
+<a id="__codelineno-16-19" name="__codelineno-16-19" href="#__codelineno-16-19"></a>
+<a id="__codelineno-16-20" name="__codelineno-16-20" href="#__codelineno-16-20"></a><span class="gu">### Post-Release</span>
+<a id="__codelineno-16-21" name="__codelineno-16-21" href="#__codelineno-16-21"></a>
+<a id="__codelineno-16-22" name="__codelineno-16-22" href="#__codelineno-16-22"></a><span class="k">- [ ]</span> Merge release tag back to <span class="sb">`main`</span> if needed
+<a id="__codelineno-16-23" name="__codelineno-16-23" href="#__codelineno-16-23"></a><span class="k">- [ ]</span> Archive released tickets
+<a id="__codelineno-16-24" name="__codelineno-16-24" href="#__codelineno-16-24"></a>
+<a id="__codelineno-16-25" name="__codelineno-16-25" href="#__codelineno-16-25"></a><span class="gu">## Ownership</span>
+<a id="__codelineno-16-26" name="__codelineno-16-26" href="#__codelineno-16-26"></a>
+<a id="__codelineno-16-27" name="__codelineno-16-27" href="#__codelineno-16-27"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Release Manager:**</span> Rotates weekly (schedule in team calendar)
+<a id="__codelineno-16-28" name="__codelineno-16-28" href="#__codelineno-16-28"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Release Manager responsibilities:**</span>
+<a id="__codelineno-16-29" name="__codelineno-16-29" href="#__codelineno-16-29"></a><span class="w">  </span><span class="k">-</span><span class="w"> </span>Coordinate what goes into the release
+<a id="__codelineno-16-30" name="__codelineno-16-30" href="#__codelineno-16-30"></a><span class="w">  </span><span class="k">-</span><span class="w"> </span>Run the checklist
+<a id="__codelineno-16-31" name="__codelineno-16-31" href="#__codelineno-16-31"></a><span class="w">  </span><span class="k">-</span><span class="w"> </span>Be the first responder if something goes wrong
+<a id="__codelineno-16-32" name="__codelineno-16-32" href="#__codelineno-16-32"></a>
+<a id="__codelineno-16-33" name="__codelineno-16-33" href="#__codelineno-16-33"></a><span class="gu">## Hotfixes</span>
+<a id="__codelineno-16-34" name="__codelineno-16-34" href="#__codelineno-16-34"></a>
+<a id="__codelineno-16-35" name="__codelineno-16-35" href="#__codelineno-16-35"></a>If a critical bug is found in production:
+<a id="__codelineno-16-36" name="__codelineno-16-36" href="#__codelineno-16-36"></a>
+<a id="__codelineno-16-37" name="__codelineno-16-37" href="#__codelineno-16-37"></a><span class="k">1.</span> Create branch from latest production tag: <span class="sb">`git checkout -b hotfix/description`</span>
+<a id="__codelineno-16-38" name="__codelineno-16-38" href="#__codelineno-16-38"></a><span class="k">2.</span> Fix and test locally
+<a id="__codelineno-16-39" name="__codelineno-16-39" href="#__codelineno-16-39"></a><span class="k">3.</span> Open PR with <span class="sb">`hotfix:`</span> prefix — expedited review
+<a id="__codelineno-16-40" name="__codelineno-16-40" href="#__codelineno-16-40"></a><span class="k">4.</span> Merge and deploy immediately after 1 approval
+<a id="__codelineno-16-41" name="__codelineno-16-41" href="#__codelineno-16-41"></a><span class="k">5.</span> Post-incident review within 24 hours
+<a id="__codelineno-16-42" name="__codelineno-16-42" href="#__codelineno-16-42"></a>
+<a id="__codelineno-16-43" name="__codelineno-16-43" href="#__codelineno-16-43"></a><span class="gu">## Rollback</span>
+<a id="__codelineno-16-44" name="__codelineno-16-44" href="#__codelineno-16-44"></a>
+<a id="__codelineno-16-45" name="__codelineno-16-45" href="#__codelineno-16-45"></a>If a release causes issues:
+<a id="__codelineno-16-46" name="__codelineno-16-46" href="#__codelineno-16-46"></a>
+<a id="__codelineno-16-47" name="__codelineno-16-47" href="#__codelineno-16-47"></a><span class="k">1.</span> Immediate: Re-deploy previous stable Docker image
+<a id="__codelineno-16-48" name="__codelineno-16-48" href="#__codelineno-16-48"></a><span class="k">2.</span> Within 1 hour: Decide between fix-forward or full rollback
+<a id="__codelineno-16-49" name="__codelineno-16-49" href="#__codelineno-16-49"></a><span class="k">3.</span> Database migrations: consult DevOps before rollback
+</code></pre></div>
+<ul>
+<li>[ ] <strong>Step 2: Commit releases section</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>git<span class="w"> </span>add<span class="w"> </span>docs/releases/index.md
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;docs: add releases section with checklist, ownership and rollback procedures&quot;</span>
+</code></pre></div>
+<hr />
+<h3 id="task-8-design-section">Task 8: Design Section<a class="headerlink" href="#task-8-design-section" title="Permanent link">&para;</a></h3>
+<p><strong>Files:</strong>
+- Create: <code>docs/design/index.md</code></p>
+<ul>
+<li>[ ] <strong>Step 1: Create docs/design/index.md</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="gh"># Design</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="gu">## Design Handoff</span>
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="k">1.</span> Designer creates final mockups in Figma
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a><span class="k">2.</span> Designer adds <span class="gs">**ready for dev**</span> label in Figma
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a><span class="k">3.</span> Designer walks through the design with the assigned developer
+<a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a><span class="k">4.</span> Developer creates a ticket with:
+<a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a><span class="w">   </span><span class="k">-</span><span class="w"> </span>Link to Figma frame
+<a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a><span class="w">   </span><span class="k">-</span><span class="w"> </span>Acceptance criteria
+<a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a><span class="w">   </span><span class="k">-</span><span class="w"> </span>Estimated complexity
+<a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a>
+<a id="__codelineno-18-13" name="__codelineno-18-13" href="#__codelineno-18-13"></a><span class="gu">## Design System</span>
+<a id="__codelineno-18-14" name="__codelineno-18-14" href="#__codelineno-18-14"></a>
+<a id="__codelineno-18-15" name="__codelineno-18-15" href="#__codelineno-18-15"></a>Our design system is maintained in Figma:
+<a id="__codelineno-18-16" name="__codelineno-18-16" href="#__codelineno-18-16"></a>
+<a id="__codelineno-18-17" name="__codelineno-18-17" href="#__codelineno-18-17"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Colors:**</span> Brand palette, semantic colors (success, error, warning)
+<a id="__codelineno-18-18" name="__codelineno-18-18" href="#__codelineno-18-18"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Typography:**</span> Headings, body text, captions
+<a id="__codelineno-18-19" name="__codelineno-18-19" href="#__codelineno-18-19"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Components:**</span> Buttons, inputs, cards, modals — use existing components whenever possible
+<a id="__codelineno-18-20" name="__codelineno-18-20" href="#__codelineno-18-20"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Icons:**</span> Lucide icon set
+<a id="__codelineno-18-21" name="__codelineno-18-21" href="#__codelineno-18-21"></a>
+<a id="__codelineno-18-22" name="__codelineno-18-22" href="#__codelineno-18-22"></a>!!! warning &quot;Don&#39;t reinvent components&quot;
+<a id="__codelineno-18-23" name="__codelineno-18-23" href="#__codelineno-18-23"></a>    If a component already exists in the design system, use it. If you need a new one, discuss with the designer first.
+<a id="__codelineno-18-24" name="__codelineno-18-24" href="#__codelineno-18-24"></a>
+<a id="__codelineno-18-25" name="__codelineno-18-25" href="#__codelineno-18-25"></a><span class="gu">## Tools</span>
+<a id="__codelineno-18-26" name="__codelineno-18-26" href="#__codelineno-18-26"></a>
+<a id="__codelineno-18-27" name="__codelineno-18-27" href="#__codelineno-18-27"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Figma:**</span> Primary design tool — [<span class="nt">team workspace</span>](<span class="na">https://figma.com</span>)
+<a id="__codelineno-18-28" name="__codelineno-18-28" href="#__codelineno-18-28"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Whimsical:**</span> Flowcharts and wireframes
+<a id="__codelineno-18-29" name="__codelineno-18-29" href="#__codelineno-18-29"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Zeplin:**</span> Legacy project references (being migrated to Figma)
+</code></pre></div>
+<ul>
+<li>[ ] <strong>Step 2: Commit design section</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>git<span class="w"> </span>add<span class="w"> </span>docs/design/index.md
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;docs: add design section with handoff process and design system rules&quot;</span>
+</code></pre></div>
+<hr />
+<h3 id="task-9-communication-section">Task 9: Communication Section<a class="headerlink" href="#task-9-communication-section" title="Permanent link">&para;</a></h3>
+<p><strong>Files:</strong>
+- Create: <code>docs/communication/index.md</code></p>
+<ul>
+<li>[ ] <strong>Step 1: Create docs/communication/index.md</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="gh"># Communication</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="gu">## Slack Channels</span>
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>| Channel | Purpose | Post Here If... |
+<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a>|---------|---------|-----------------|
+<a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a>| <span class="ni">#general</span> | Team-wide announcements | Company news, process changes |
+<a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a>| <span class="ni">#dev</span> | Engineering discussions | Technical questions, PR reviews |
+<a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a>| <span class="ni">#qa</span> | Testing discussions | Bug triage, test plans |
+<a id="__codelineno-20-10" name="__codelineno-20-10" href="#__codelineno-20-10"></a>| <span class="ni">#design</span> | Design feedback | Mockup reviews, UX questions |
+<a id="__codelineno-20-11" name="__codelineno-20-11" href="#__codelineno-20-11"></a>| <span class="ni">#incidents</span> | Live incident response | Production is down |
+<a id="__codelineno-20-12" name="__codelineno-20-12" href="#__codelineno-20-12"></a>| <span class="ni">#random</span> | Non-work chat | Memes, lunch plans |
+<a id="__codelineno-20-13" name="__codelineno-20-13" href="#__codelineno-20-13"></a>
+<a id="__codelineno-20-14" name="__codelineno-20-14" href="#__codelineno-20-14"></a><span class="gu">## Meetings</span>
+<a id="__codelineno-20-15" name="__codelineno-20-15" href="#__codelineno-20-15"></a>
+<a id="__codelineno-20-16" name="__codelineno-20-16" href="#__codelineno-20-16"></a>| Meeting | When | Who | Duration |
+<a id="__codelineno-20-17" name="__codelineno-20-17" href="#__codelineno-20-17"></a>|---------|------|-----|----------|
+<a id="__codelineno-20-18" name="__codelineno-20-18" href="#__codelineno-20-18"></a>| Daily Standup | 10:00 AM daily | Everyone | 15 min |
+<a id="__codelineno-20-19" name="__codelineno-20-19" href="#__codelineno-20-19"></a>| Sprint Planning | Monday, bi-weekly | Everyone | 1 hour |
+<a id="__codelineno-20-20" name="__codelineno-20-20" href="#__codelineno-20-20"></a>| Backlog Refinement | Wednesday, weekly | TL, Devs, QA | 45 min |
+<a id="__codelineno-20-21" name="__codelineno-20-21" href="#__codelineno-20-21"></a>| Retro | Friday, bi-weekly | Everyone | 45 min |
+<a id="__codelineno-20-22" name="__codelineno-20-22" href="#__codelineno-20-22"></a>| 1:1s | Weekly | TL + each team member | 30 min |
+<a id="__codelineno-20-23" name="__codelineno-20-23" href="#__codelineno-20-23"></a>
+<a id="__codelineno-20-24" name="__codelineno-20-24" href="#__codelineno-20-24"></a><span class="gu">### Standup Format</span>
+<a id="__codelineno-20-25" name="__codelineno-20-25" href="#__codelineno-20-25"></a>
+<a id="__codelineno-20-26" name="__codelineno-20-26" href="#__codelineno-20-26"></a>Each person answers:
+<a id="__codelineno-20-27" name="__codelineno-20-27" href="#__codelineno-20-27"></a><span class="k">1.</span> What did you do yesterday?
+<a id="__codelineno-20-28" name="__codelineno-20-28" href="#__codelineno-20-28"></a><span class="k">2.</span> What will you do today?
+<a id="__codelineno-20-29" name="__codelineno-20-29" href="#__codelineno-20-29"></a><span class="k">3.</span> Any blockers?
+<a id="__codelineno-20-30" name="__codelineno-20-30" href="#__codelineno-20-30"></a>
+<a id="__codelineno-20-31" name="__codelineno-20-31" href="#__codelineno-20-31"></a><span class="gu">## Escalation</span>
+<a id="__codelineno-20-32" name="__codelineno-20-32" href="#__codelineno-20-32"></a>
+<a id="__codelineno-20-33" name="__codelineno-20-33" href="#__codelineno-20-33"></a>If you&#39;re blocked for more than <span class="gs">**2 hours**</span>:
+<a id="__codelineno-20-34" name="__codelineno-20-34" href="#__codelineno-20-34"></a>
+<a id="__codelineno-20-35" name="__codelineno-20-35" href="#__codelineno-20-35"></a><span class="k">1.</span> Ask in the relevant team channel (#dev, <span class="ni">#qa</span>, <span class="ni">#design</span>)
+<a id="__codelineno-20-36" name="__codelineno-20-36" href="#__codelineno-20-36"></a><span class="k">2.</span> If no response in 30 min, ping the relevant lead directly
+<a id="__codelineno-20-37" name="__codelineno-20-37" href="#__codelineno-20-37"></a><span class="k">3.</span> If still blocked, escalate to Tech Lead
+<a id="__codelineno-20-38" name="__codelineno-20-38" href="#__codelineno-20-38"></a>
+<a id="__codelineno-20-39" name="__codelineno-20-39" href="#__codelineno-20-39"></a>!!! tip &quot;Over-communicate&quot;
+<a id="__codelineno-20-40" name="__codelineno-20-40" href="#__codelineno-20-40"></a>    In a remote/hybrid team, it&#39;s better to share too much than too little. If you&#39;re unsure whether to post something, post it.
+</code></pre></div>
+<ul>
+<li>[ ] <strong>Step 2: Commit communication section</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>git<span class="w"> </span>add<span class="w"> </span>docs/communication/index.md
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;docs: add communication section with channels, meetings and escalation&quot;</span>
+</code></pre></div>
+<hr />
+<h3 id="task-10-incidents-section">Task 10: Incidents Section<a class="headerlink" href="#task-10-incidents-section" title="Permanent link">&para;</a></h3>
+<p><strong>Files:</strong>
+- Create: <code>docs/incidents/index.md</code></p>
+<ul>
+<li>[ ] <strong>Step 1: Create docs/incidents/index.md</strong></li>
+</ul>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="gh"># Incidents</span>
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="gu">## Severity Levels</span>
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>
+<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a>| Level | Name | Example | Response Time |
+<a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a>|-------|------|---------|---------------|
+<a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a>| P0 | Critical | Production down, data loss | Immediate |
+<a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a>| P1 | High | Core feature broken | &lt; 1 hour |
+<a id="__codelineno-22-9" name="__codelineno-22-9" href="#__codelineno-22-9"></a>| P2 | Medium | Non-core feature degraded | &lt; 4 hours |
+<a id="__codelineno-22-10" name="__codelineno-22-10" href="#__codelineno-22-10"></a>| P3 | Low | Minor bug, workaround exists | Next business day |
+<a id="__codelineno-22-11" name="__codelineno-22-11" href="#__codelineno-22-11"></a>
+<a id="__codelineno-22-12" name="__codelineno-22-12" href="#__codelineno-22-12"></a><span class="gu">## Incident Response</span>
+<a id="__codelineno-22-13" name="__codelineno-22-13" href="#__codelineno-22-13"></a>
+<a id="__codelineno-22-14" name="__codelineno-22-14" href="#__codelineno-22-14"></a><span class="gu">### P0 / P1</span>
+<a id="__codelineno-22-15" name="__codelineno-22-15" href="#__codelineno-22-15"></a>
+<a id="__codelineno-22-16" name="__codelineno-22-16" href="#__codelineno-22-16"></a><span class="k">1.</span> <span class="gs">**Detect**</span> — Alert fires or user reports
+<a id="__codelineno-22-17" name="__codelineno-22-17" href="#__codelineno-22-17"></a><span class="k">2.</span> <span class="gs">**Communicate**</span> — Post in <span class="sb">`#incidents`</span> with:
+<a id="__codelineno-22-18" name="__codelineno-22-18" href="#__codelineno-22-18"></a><span class="w">   </span><span class="k">-</span><span class="w"> </span>What is broken
+<a id="__codelineno-22-19" name="__codelineno-22-19" href="#__codelineno-22-19"></a><span class="w">   </span><span class="k">-</span><span class="w"> </span>Who is investigating
+<a id="__codelineno-22-20" name="__codelineno-22-20" href="#__codelineno-22-20"></a><span class="w">   </span><span class="k">-</span><span class="w"> </span>Estimated impact
+<a id="__codelineno-22-21" name="__codelineno-22-21" href="#__codelineno-22-21"></a><span class="k">3.</span> <span class="gs">**Investigate**</span> — Identify root cause
+<a id="__codelineno-22-22" name="__codelineno-22-22" href="#__codelineno-22-22"></a><span class="k">4.</span> <span class="gs">**Mitigate**</span> — Stop the bleeding (rollback, feature flag off, etc.)
+<a id="__codelineno-22-23" name="__codelineno-22-23" href="#__codelineno-22-23"></a><span class="k">5.</span> <span class="gs">**Fix**</span> — Implement proper fix
+<a id="__codelineno-22-24" name="__codelineno-22-24" href="#__codelineno-22-24"></a><span class="k">6.</span> <span class="gs">**Verify**</span> — Confirm resolution
+<a id="__codelineno-22-25" name="__codelineno-22-25" href="#__codelineno-22-25"></a><span class="k">7.</span> <span class="gs">**Postmortem**</span> — Within 24 hours for P0, within 48 hours for P1
+<a id="__codelineno-22-26" name="__codelineno-22-26" href="#__codelineno-22-26"></a>
+<a id="__codelineno-22-27" name="__codelineno-22-27" href="#__codelineno-22-27"></a><span class="gu">### Communication Template (Slack #incidents)</span>
+</code></pre></div>
+🚨 INCIDENT — P0 — Service X is down
+Impact: Users cannot log in
+Investigator: @dev-name
+ETA: Unknown, investigating
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>Update every 15 minutes until resolved.
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>## Postmortem Template
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>Every P0 and P1 incident requires a postmortem document:
+<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a>
+<a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a>- **Summary:** One paragraph of what happened
+<a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a>- **Timeline:** Minute-by-minute from detection to resolution
+<a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a>- **Root Cause:** 5 Whys analysis
+<a id="__codelineno-23-10" name="__codelineno-23-10" href="#__codelineno-23-10"></a>- **Impact:** Number of affected users, duration
+<a id="__codelineno-23-11" name="__codelineno-23-11" href="#__codelineno-23-11"></a>- **What Went Well:** At least one item
+<a id="__codelineno-23-12" name="__codelineno-23-12" href="#__codelineno-23-12"></a>- **What Went Wrong:** Honest assessment
+<a id="__codelineno-23-13" name="__codelineno-23-13" href="#__codelineno-23-13"></a>- **Action Items:** Specific, assigned, with deadlines
+<a id="__codelineno-23-14" name="__codelineno-23-14" href="#__codelineno-23-14"></a>
+<a id="__codelineno-23-15" name="__codelineno-23-15" href="#__codelineno-23-15"></a>Postmortems are blameless. The goal is to improve systems, not assign blame.
+</code></pre></div></p>
+<ul>
+<li>[ ] <strong>Step 2: Commit incidents section</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>git<span class="w"> </span>add<span class="w"> </span>docs/incidents/index.md
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;docs: add incidents section with severity levels and response runbook&quot;</span>
+</code></pre></div>
+<hr />
+<h3 id="task-11-glossary">Task 11: Glossary<a class="headerlink" href="#task-11-glossary" title="Permanent link">&para;</a></h3>
+<p><strong>Files:</strong>
+- Create: <code>docs/glossary.md</code></p>
+<ul>
+<li>[ ] <strong>Step 1: Create docs/glossary.md</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="gh"># Glossary</span>
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>| Term | Meaning |
+<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a>|------|---------|
+<a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a>| CI/CD | Continuous Integration / Continuous Deployment |
+<a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a>| E2E | End-to-End tests |
+<a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a>| P0 / P1 / P2 / P3 | Incident severity levels (Critical / High / Medium / Low) |
+<a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a>| PR | Pull Request |
+<a id="__codelineno-25-9" name="__codelineno-25-9" href="#__codelineno-25-9"></a>| QA | Quality Assurance |
+<a id="__codelineno-25-10" name="__codelineno-25-10" href="#__codelineno-25-10"></a>| TL | Tech Lead |
+<a id="__codelineno-25-11" name="__codelineno-25-11" href="#__codelineno-25-11"></a>| WIP | Work In Progress |
+<a id="__codelineno-25-12" name="__codelineno-25-12" href="#__codelineno-25-12"></a>| LGTM | Looks Good To Me (approval shorthand) |
+</code></pre></div>
+<ul>
+<li>[ ] <strong>Step 2: Commit glossary</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>git<span class="w"> </span>add<span class="w"> </span>docs/glossary.md
+<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;docs: add glossary with common team abbreviations&quot;</span>
+</code></pre></div>
+<hr />
+<h3 id="task-12-build-verification">Task 12: Build Verification<a class="headerlink" href="#task-12-build-verification" title="Permanent link">&para;</a></h3>
+<p><strong>Files:</strong>
+- Test: all created files</p>
+<ul>
+<li>[ ] <strong>Step 1: Install dependencies</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</code></pre></div>
+<p>Expected: <code>mkdocs-material</code> installs successfully.</p>
+<ul>
+<li>[ ] <strong>Step 2: Build the site locally</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>mkdocs<span class="w"> </span>build<span class="w"> </span>--strict
+</code></pre></div>
+<p>Expected: Build completes with <code>0</code> warnings and <code>0</code> errors. Site generated in <code>site/</code> directory.</p>
+<ul>
+<li>[ ] <strong>Step 3: Serve locally and spot-check</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>mkdocs<span class="w"> </span>serve<span class="w"> </span><span class="p">&amp;</span>
+<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a><span class="c1"># Open http://127.0.0.1:8000 in browser</span>
+<a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a><span class="c1"># Verify:</span>
+<a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a><span class="c1"># - Landing page loads</span>
+<a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a><span class="c1"># - Navigation shows all 10 sections</span>
+<a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a><span class="c1"># - Search bar is present</span>
+<a id="__codelineno-29-7" name="__codelineno-29-7" href="#__codelineno-29-7"></a><span class="c1"># - Dark mode toggle works</span>
+</code></pre></div>
+<ul>
+<li>[ ] <strong>Step 4: Final commit</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>git<span class="w"> </span>add<span class="w"> </span>.
+<a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;chore: verify mkdocs build and complete wiki scaffold&quot;</span>
+</code></pre></div>
+<hr />
+<h2 id="self-review-checklist">Self-Review Checklist<a class="headerlink" href="#self-review-checklist" title="Permanent link">&para;</a></h2>
+<p><strong>Spec coverage:</strong>
+- [x] Landing page with quick links and editing guide
+- [x] Onboarding with Day 1 checklist
+- [x] Development with Git workflow and code review
+- [x] Testing with pyramid and bug reports
+- [x] DevOps with CI/CD and monitoring
+- [x] Releases with checklist and rollback
+- [x] Design with handoff and design system
+- [x] Communication with channels and meetings
+- [x] Incidents with severity and runbook
+- [x] Glossary with terms
+- [x] MkDocs config with Material theme
+- [x] GitHub Actions auto-deploy
+- [x] Local build verification steps</p>
+<p><strong>Placeholder scan:</strong> No TBD, TODO, or vague instructions found.</p>
+<p><strong>Type consistency:</strong> All file paths and commands are consistent throughout the plan.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
