@@ -1,40 +1,40 @@
 # Communication
 
-## Slack Channels
+## Slack-каналы
 
-| Channel | Purpose | Post Here If... |
-|---------|---------|-----------------|
-| #general | Team-wide announcements | Company news, process changes |
-| #dev | Engineering discussions | Technical questions, PR reviews |
-| #qa | Testing discussions | Bug triage, test plans |
-| #design | Design feedback | Mockup reviews, UX questions |
-| #incidents | Live incident response | Production is down |
-| #random | Non-work chat | Memes, lunch plans |
+| Канал | Назначение | Пиши сюда, если... |
+|-------|------------|-------------------|
+| #general | Объявления для всей команды | Новости компании, изменения процессов |
+| #dev | Инженерные обсуждения | Технические вопросы, review PR |
+| #qa | Обсуждения тестирования | Bug triage, тест-планы |
+| #design | Обратная связь по дизайну | Review макетов, UX-вопросы |
+| #incidents | Реагирование на инциденты | Production упал |
+| #random | Нерабочий чат | Мемы, планы на обед |
 
-## Meetings
+## Встречи
 
-| Meeting | When | Who | Duration |
-|---------|------|-----|----------|
-| Daily Standup | 10:00 AM daily | Everyone | 15 min |
-| Sprint Planning | Monday, bi-weekly | Everyone | 1 hour |
-| Backlog Refinement | Wednesday, weekly | TL, Devs, QA | 45 min |
-| Retro | Friday, bi-weekly | Everyone | 45 min |
-| 1:1s | Weekly | TL + each team member | 30 min |
+| Встреча | Когда | Кто | Длительность |
+|---------|-------|-----|--------------|
+| Daily Standup | 10:00 ежедневно | Все | 15 мин |
+| Sprint Planning | Понедельник, раз в 2 недели | Все | 1 час |
+| Backlog Refinement | Среда, еженедельно | TL, разрабы, QA | 45 мин |
+| Retro | Пятница, раз в 2 недели | Все | 45 мин |
+| 1:1 | Еженедельно | TL + каждый член команды | 30 мин |
 
-### Standup Format
+### Формат Standup
 
-Each person answers:
-1. What did you do yesterday?
-2. What will you do today?
-3. Any blockers?
+Каждый отвечает:
+1. Что делал вчера?
+2. Что буду делать сегодня?
+3. Есть ли блокеры?
 
-## Escalation
+## Эскалация
 
-If you're blocked for more than **2 hours**:
+Если ты заблокирован дольше **2 часов**:
 
-1. Ask in the relevant team channel (#dev, #qa, #design)
-2. If no response in 30 min, ping the relevant lead directly
-3. If still blocked, escalate to Tech Lead
+1. Спроси в соответствующем командном канале (#dev, #qa, #design)
+2. Если нет ответа за 30 минут — напиши напрямую ответственному lead
+3. Если всё ещё заблокирован — эскалируй Tech Lead-у
 
 !!! tip "Over-communicate"
-    In a remote/hybrid team, it's better to share too much than too little. If you're unsure whether to post something, post it.
+    В удалённой/гибридной команде лучше сказать больше, чем меньше. Если не уверен, стоит ли что-то писать — напиши.

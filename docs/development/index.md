@@ -2,53 +2,53 @@
 
 ## Git Workflow
 
-We use **trunk-based development**:
+Мы используем **trunk-based development**:
 
-- `main` is always deployable
-- All work happens on short-lived feature branches
-- Branch naming: `feat/description`, `fix/description`, `docs/description`
-- Pull Requests are mandatory for all changes
+- `main` всегда готов к деплою
+- Вся работа ведётся в короткоживущих feature-ветках
+- Именование веток: `feat/описание`, `fix/описание`, `docs/описание`
+- Pull Request обязателен для любых изменений
 
 ## Code Style
 
-- We use the linters configured in the repository (ESLint, Prettier, Black, etc.)
-- Run `npm run lint` or equivalent before pushing
-- Pre-commit hooks are configured — they will block commits with style violations
+- Мы используем линтеры, настроенные в репозитории (ESLint, Prettier, Black и др.)
+- Перед пушем запускай `npm run lint` или аналог
+- Настроены pre-commit hooks — они блокируют commit-ы с нарушениями стиля
 
 ## Code Review
 
-- Every PR requires **at least 1 approval** before merge
-- Turnaround target: review within **4 hours** during work hours
-- As a reviewer, check:
-  - Logic correctness
-  - Test coverage
-  - Security implications
-  - Performance impact (for hot paths)
+- Каждый PR требует **как минимум 1 approval** перед merge
+- Целевое время review: **в течение 4 часов** в рабочее время
+- Как reviewer, проверяй:
+  - Корректность логики
+  - Покрытие тестами
+  - Security-импликации
+  - Влияние на производительность (для hot path)
 
 ## Commits
 
-Use [Conventional Commits](https://www.conventionalcommits.org/):
+Используй [Conventional Commits](https://www.conventionalcommits.org/):
 
 ```
-feat: add user authentication
-fix: resolve login redirect loop
-docs: update API examples
-refactor: simplify payment processing
+feat: добавить аутентификацию пользователя
+fix: исправить цикл редиректов при логине
+docs: обновить примеры API
+refactor: упростить обработку платежей
 ```
 
 ## Pull Requests
 
-PR description template (auto-populated):
+Шаблон описания PR (автозаполняемый):
 
 ```markdown
-## What
-Brief description of the change
+## Что изменилось
+Краткое описание изменения
 
-## Why
-Business or technical reason
+## Почему
+Бизнес- или техническая причина
 
-## How to Test
-Steps to verify the change
+## Как протестировать
+Шаги для проверки изменения
 
-## Screenshots (if UI change)
+## Скриншоты (если изменение UI)
 ```

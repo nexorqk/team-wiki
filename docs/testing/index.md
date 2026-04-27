@@ -1,39 +1,39 @@
 # Testing
 
-## Test Pyramid
+## Пирамида тестов
 
-| Level | Responsibility | When to Run |
-|-------|---------------|-------------|
-| Unit tests | Developers | On every PR, locally and in CI |
-| Integration tests | Developers + QA | On every PR in CI |
-| E2E tests | QA team | Nightly + before release |
+| Уровень | Ответственность | Когда запускать |
+|---------|-----------------|-----------------|
+| Unit tests | Разработчики | В каждом PR, локально и в CI |
+| Integration tests | Разработчики + QA | В каждом PR в CI |
+| E2E tests | QA-команда | Ночью + перед релизом |
 
 ## Bug Reports
 
-When you find a bug, create a ticket with:
+Когда нашёл баг — создай тикет с указанием:
 
-- **Title:** Clear, one-sentence description
-- **Steps to Reproduce:** Numbered list
-- **Expected Result:** What should happen
-- **Actual Result:** What actually happens
-- **Environment:** Browser, OS, app version
+- **Title:** Чёткое описание в одно предложение
+- **Steps to Reproduce:** Нумерованный список
+- **Expected Result:** Что должно происходить
+- **Actual Result:** Что происходит на самом деле
+- **Environment:** Браузер, ОС, версия приложения
 - **Severity:**
-  - **Blocker** — prevents core functionality, no workaround
-  - **Critical** — major functionality broken, workaround exists
-  - **Major** — noticeable issue, limited impact
-  - **Minor** — cosmetic or edge case
+  - **Blocker** — блокирует основной функционал, обходного пути нет
+  - **Critical** — основной функционал сломан, есть workaround
+  - **Major** — заметная проблема, ограниченное влияние
+  - **Minor** — косметическая или edge case
 
-## Environments
+## Окружения
 
-| Environment | Purpose | Data |
-|-------------|---------|------|
-| Local | Development | Mock / seeded |
-| Dev | Integration testing | Synthetic |
-| Staging | Pre-release validation | Anonymized production |
-| Production | Live users | Real |
+| Окружение | Назначение | Данные |
+|-----------|------------|--------|
+| Local | Разработка | Mock / seeded |
+| Dev | Интеграционное тестирование | Synthetic |
+| Staging | Предрелизная валидация | Anonymized production |
+| Production | Живые пользователи | Real |
 
 ## Regression Testing
 
-- QA runs full regression before every release
-- Critical paths are covered by automated E2E tests
-- New features must include test cases in the ticket before development starts
+- QA запускает полный regression перед каждым релизом
+- Критические сценарии покрыты автоматизированными E2E-тестами
+- Новый функционал должен включать тест-кейсы в тикете до начала разработки

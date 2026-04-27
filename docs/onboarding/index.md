@@ -1,32 +1,32 @@
 # Onboarding
 
-## Day 1 Checklist
+## Чек-лист первого дня
 
-- [ ] Get access to GitHub organization
-- [ ] Get access to Slack workspace
-- [ ] Get access to Figma
-- [ ] Get access to staging and production environments (read-only initially)
-- [ ] Set up local development environment (see Development guide)
-- [ ] Join daily standup at 10:00 AM
-- [ ] Schedule 1:1 with your buddy (assigned by TL)
+- [ ] Получить доступ к GitHub-организации
+- [ ] Получить доступ к рабочему пространству Slack
+- [ ] Получить доступ к Figma
+- [ ] Получить доступ к staging и production окружениям (пока read-only)
+- [ ] Настроить локальное development-окружение (см. раздел Development)
+- [ ] Присоединиться к daily standup в 10:00
+- [ ] Назначить 1:1 с buddy (назначается Tech Lead-ом)
 
-## Tools We Use
+## Инструменты, которые мы используем
 
-| Tool | Purpose | How to Get Access |
-|------|---------|-------------------|
-| GitHub | Code & Wiki | Admin invites to org |
-| Slack | Communication | Admin invites to workspace |
-| Figma | Design | Designer adds to team |
-| Datadog / Grafana | Monitoring | DevOps adds account |
+| Инструмент | Назначение | Как получить доступ |
+|------------|------------|---------------------|
+| GitHub | Код и вики | Админ приглашает в организацию |
+| Slack | Коммуникация | Админ приглашает в рабочее пространство |
+| Figma | Дизайн | Дизайнер добавляет в команду |
+| Datadog / Grafana | Мониторинг | DevOps создаёт аккаунт |
 
-## Your First PR
+## Твой первый Pull Request
 
-1. Clone the main repository
-2. Create a branch: `git checkout -b onboarding/your-name`
-3. Add your name to the team roster in this page
-4. Open a Pull Request
-5. Request review from your buddy
-6. Merge after approval
+1. Склонируй основной репозиторий
+2. Создай ветку: `git checkout -b onboarding/твоё-имя`
+3. Добавь своё имя в список команды на этой странице
+4. Открой Pull Request
+5. Запроси review у своего buddy
+6. Сделай merge после approval
 
-!!! tip "Questions?"
-    If anything is unclear, ask in `#general` on Slack or ping your buddy directly.
+!!! tip "Вопросы?"
+    Если что-то непонятно — спроси в канале `#general` в Slack или напиши своему buddy напрямую.

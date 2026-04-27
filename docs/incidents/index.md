@@ -1,50 +1,50 @@
 # Incidents
 
-## Severity Levels
+## Уровни Severity
 
-| Level | Name | Example | Response Time |
-|-------|------|---------|---------------|
-| P0 | Critical | Production down, data loss | Immediate |
-| P1 | High | Core feature broken | < 1 hour |
-| P2 | Medium | Non-core feature degraded | < 4 hours |
-| P3 | Low | Minor bug, workaround exists | Next business day |
+| Уровень | Название | Пример | Время реакции |
+|---------|----------|--------|---------------|
+| P0 | Critical | Production down, потеря данных | Немедленно |
+| P1 | High | Основной функционал сломан | < 1 часа |
+| P2 | Medium | Некритичный функционал деградировал | < 4 часов |
+| P3 | Low | Незначительный баг, есть workaround | Следующий рабочий день |
 
-## Incident Response
+## Реагирование на инцидент
 
 ### P0 / P1
 
-1. **Detect** — Alert fires or user reports
-2. **Communicate** — Post in `#incidents` with:
-   - What is broken
-   - Who is investigating
-   - Estimated impact
-3. **Investigate** — Identify root cause
-4. **Mitigate** — Stop the bleeding (rollback, feature flag off, etc.)
-5. **Fix** — Implement proper fix
-6. **Verify** — Confirm resolution
-7. **Postmortem** — Within 24 hours for P0, within 48 hours for P1
+1. **Detect** — сработал alert или пользователь сообщил
+2. **Communicate** — напиши в `#incidents`:
+   - Что сломано
+   - Кто расследует
+   - Оценка влияния
+3. **Investigate** — определи root cause
+4. **Mitigate** — останови кровотечение (rollback, отключение feature flag и т.д.)
+5. **Fix** — внедри полноценный фикс
+6. **Verify** — подтверди, что всё работает
+7. **Postmortem** — в течение 24 часов для P0, в течение 48 часов для P1
 
-### Communication Template (Slack #incidents)
+### Шаблон коммуникации (Slack #incidents)
 
 ```
 🚨 INCIDENT — P0 — Service X is down
-Impact: Users cannot log in
+Impact: Пользователи не могут залогиниться
 Investigator: @dev-name
-ETA: Unknown, investigating
+ETA: Неизвестно, расследуем
 ```
 
-Update every 15 minutes until resolved.
+Обновляй каждые 15 минут до разрешения.
 
-## Postmortem Template
+## Шаблон Postmortem
 
-Every P0 and P1 incident requires a postmortem document:
+Каждый P0 и P1 инцидент требует Postmortem-документа:
 
-- **Summary:** One paragraph of what happened
-- **Timeline:** Minute-by-minute from detection to resolution
-- **Root Cause:** 5 Whys analysis
-- **Impact:** Number of affected users, duration
-- **What Went Well:** At least one item
-- **What Went Wrong:** Honest assessment
-- **Action Items:** Specific, assigned, with deadlines
+- **Summary:** Один абзац о том, что произошло
+- **Timeline:** Поминутно от обнаружения до разрешения
+- **Root Cause:** Анализ по методу 5 Whys
+- **Impact:** Количество затронутых пользователей, длительность
+- **What Went Well:** Как минимум один пункт
+- **What Went Wrong:** Честная оценка
+- **Action Items:** Конкретные, с ответственными и дедлайнами
 
-Postmortems are blameless. The goal is to improve systems, not assign blame.
+Postmortem-ы без обвинений. Цель — улучшить системы, а не наказать людей.

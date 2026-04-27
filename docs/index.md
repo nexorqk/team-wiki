@@ -1,29 +1,29 @@
 # Team Wiki
 
-Welcome to the single source of truth for how our team works.
+Добро пожаловать в единый источник правды о том, как работает наша команда.
 
-## Quick Links
+## Быстрые ссылки
 
-- [Onboarding](onboarding/index.md) — New here? Start here
-- [Development](development/index.md) — How we write code
-- [Testing](testing/index.md) — How we ensure quality
-- [Releases](releases/index.md) — How we ship
-- [Incidents](incidents/index.md) — What to do when things break
+- [Onboarding](onboarding/index.md) — Впервые здесь? Начни с этого раздела
+- [Development](development/index.md) — Как мы пишем код
+- [Testing](testing/index.md) — Как мы обеспечиваем качество
+- [Releases](releases/index.md) — Как мы релизим
+- [Incidents](incidents/index.md) — Что делать, когда что-то ломается
 
-## How to Edit This Wiki
+## Как редактировать эту вики
 
-This wiki is stored as Markdown in our Git repository. To make changes:
+Эта вики хранится в виде Markdown в нашем Git-репозитории. Чтобы внести изменения:
 
-1. Create a branch: `git checkout -b docs/update-onboarding`
-2. Edit the relevant `.md` file in the `docs/` folder
-3. Open a Pull Request
-4. Ask any teammate to review
-5. Merge to `main` — the site updates automatically in ~1 minute
+1. Создай ветку: `git checkout -b docs/update-onboarding`
+2. Отредактируй нужный `.md` файл в папке `docs/`
+3. Открой Pull Request
+4. Попроси любого члена команды сделать review
+5. Сделай merge в `main` — сайт обновится автоматически примерно через 1 минуту
 
-## Team Contacts
+## Контакты команды
 
-| Role | Who to Ask |
-|------|------------|
+| Роль | К кому обращаться |
+|------|-------------------|
 | Tech Lead | @tl |
 | DevOps | @devops |
 | QA Lead | @qa-lead |

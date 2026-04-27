@@ -1,49 +1,49 @@
 # Releases
 
-## Release Checklist
+## Чек-лист релиза
 
-### Pre-Release (Day Before)
+### Перед релизом (за день)
 
-- [ ] All tickets for the release are merged to `main`
-- [ ] QA has signed off on staging
-- [ ] Release notes are drafted
-- [ ] Database migrations are reviewed by DevOps
+- [ ] Все тикеты релиза влиты в `main`
+- [ ] QA дал sign-off на staging
+- [ ] Release notes подготовлены
+- [ ] Миграции баз данных проверены DevOps
 
-### Release Day
+### В день релиза
 
-- [ ] Run automated E2E suite against staging
-- [ ] Deploy to production (manual approval in GitHub Actions)
-- [ ] Run smoke tests on production
-- [ ] Monitor error rate for 30 minutes
-- [ ] Announce release in `#releases` Slack channel
+- [ ] Запустить автоматизированный E2E-suite на staging
+- [ ] Задеплоить в production (ручной approval в GitHub Actions)
+- [ ] Прогнать smoke tests на production
+- [ ] Мониторить error rate в течение 30 минут
+- [ ] Анонсировать релиз в Slack-канале `#releases`
 
-### Post-Release
+### После релиза
 
-- [ ] Merge release tag back to `main` if needed
-- [ ] Archive released tickets
+- [ ] Смержить release tag обратно в `main`, если требуется
+- [ ] Заархивировать закрытые тикеты
 
-## Ownership
+## Ответственность
 
-- **Release Manager:** Rotates weekly (schedule in team calendar)
-- **Release Manager responsibilities:**
-  - Coordinate what goes into the release
-  - Run the checklist
-  - Be the first responder if something goes wrong
+- **Release Manager:** Ротация по неделям (расписание в командном календаре)
+- **Обязанности Release Manager:**
+  - Координировать, что попадает в релиз
+  - Проходить по чек-листу
+  - Быть first responder, если что-то пошло не так
 
 ## Hotfixes
 
-If a critical bug is found in production:
+Если в production обнаружен критический баг:
 
-1. Create branch from latest production tag: `git checkout -b hotfix/description`
-2. Fix and test locally
-3. Open PR with `hotfix:` prefix — expedited review
-4. Merge and deploy immediately after 1 approval
-5. Post-incident review within 24 hours
+1. Создать ветку от последнего production tag: `git checkout -b hotfix/описание`
+2. Исправить и протестировать локально
+3. Открыть PR с префиксом `hotfix:` — expedited review
+4. Сделать merge и задеплоить сразу после 1 approval
+5. Post-incident review в течение 24 часов
 
 ## Rollback
 
-If a release causes issues:
+Если релиз вызвал проблемы:
 
-1. Immediate: Re-deploy previous stable Docker image
-2. Within 1 hour: Decide between fix-forward or full rollback
-3. Database migrations: consult DevOps before rollback
+1. Немедленно: переустановить предыдущий стабильный Docker image
+2. В течение 1 часа: принять решение — fix forward или полный rollback
+3. Миграции БД: проконсультироваться с DevOps перед rollback
