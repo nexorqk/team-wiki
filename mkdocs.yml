@@ -45,6 +45,7 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Onboarding: onboarding/index.md
+  - Роли: roles/index.md
   - Development: development/index.md
   - Testing: testing/index.md
   - DevOps: devops/index.md
